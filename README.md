@@ -6,7 +6,7 @@
 
 **The New England exit off the North American on-ramp.**
 
-> Identity: `npub1vnjelzjwkaa4yjhnye3txeqp2dltffk7e866zjqgvwl83vn70a0szmh34q`
+> Identity: `npub157hmysd6sw7m8kkldycnnc74mssxp9nweddk2p5sw9l2nktr950qyxrenn`
 > Parent: [`tollbooth-authority-northamerica`](https://github.com/lonniev/tollbooth-authority-northamerica) (Tollbooth-Authority-NorthAmerica)
 > Service: `https://tollbooth-authority-newengland.fastmcp.app/mcp`
 
