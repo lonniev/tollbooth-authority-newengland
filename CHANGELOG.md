@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.3.0] — 2026-05-16
+
+### Changed — escalate onboarding to registered parent (NorthAmerica)
+
+`confirm_authority_claim` / `check_authority_approval` now use the
+wheel's `resolve_my_parent_npub` instead of the local `_resolve_prime_npub`.
+NE's registered upstream in dpyc-community is NorthAmerica, so NE's
+onboarding flow now escalates to NA — not Prime. This is the change
+that makes the 3-deep Authority chain (Prime → NA → NE) work end-to-end.
+
+Pin bumped to `tollbooth-dpyc[nostr]==0.20.0`. Local
+`_resolve_prime_npub` deleted. `OnboardingChallenge.prime_npub` →
+`parent_npub`.
+
 ## [0.2.0] — 2026-05-16
 
 ### Changed — adopt tollbooth-dpyc v0.19.0, drop local proof helper
