@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [Unreleased]
+- chore: track tollbooth-dpyc through 0.45.4 — SDK advances across 0.45.1 (deferred-adoption tools), 0.45.2, 0.45.3, and 0.45.4 (dynamic tenant ownership + `repair_operator_schema`). Pin bumped to `tollbooth-dpyc[nostr]==0.45.4`. No NE-local wire-API changes.
+- docs: add a DPYC ecosystem peer-repo section to the README (includes the cypher-mcp newcomer).
+
 ## [0.4.1] — 2026-06-11
 - chore: track tollbooth-dpyc through 0.44.15 — SDK audit hardening (correctness fixes for credit-tranche expiration in 0.44.9 and proof-reply handling in 0.44.10; blocking mypy + coverage gates). No wire-API changes.
 

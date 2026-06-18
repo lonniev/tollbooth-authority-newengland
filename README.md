@@ -40,6 +40,25 @@ Two secrets required by FastMCP Cloud (Horizon):
 
 Everything else — BTCPay credentials for the cashier — arrives via Secure Courier post-deploy (see [`docs/how-to-add-authority.md`](https://github.com/lonniev/dpyc-community/blob/main/docs/how-to-add-authority.md) in the community repo).
 
+## DPYC Ecosystem
+
+NE is one Authority in the wider DPYC federation — a Social Contract of Operators and Authorities bound by transparent, auditable economic rules, with a Certification Chain cascading from the First Curator down through regional Authorities like this one.
+
+- [`tollbooth-dpyc`](https://github.com/lonniev/tollbooth-dpyc) — shared Python SDK (all crypto, vault, auth, pricing, audit)
+- [`dpyc-community`](https://github.com/lonniev/dpyc-community) — governance registry and onboarding docs
+- [`dpyc-oracle`](https://github.com/lonniev/dpyc-oracle) — free community concierge (registry reads)
+- [`tollbooth-authority`](https://github.com/lonniev/tollbooth-authority) — canonical Authority (certification backbone)
+- [`tollbooth-sample`](https://github.com/lonniev/tollbooth-sample) — reference Operator implementation
+- [`tollbooth-pricing-studio`](https://github.com/lonniev/tollbooth-pricing-studio) — native pricing editor (Swift/iOS)
+- [`cypher-mcp`](https://github.com/lonniev/cypher-mcp) — monetized graph answers (named Cypher over Neo4j/AuraDB)
+- [`schwab-mcp`](https://github.com/lonniev/schwab-mcp) — Schwab brokerage data
+- [`thebrain-mcp`](https://github.com/lonniev/thebrain-mcp) — TheBrain knowledge graph
+- [`excalibur-mcp`](https://github.com/lonniev/excalibur-mcp) — X/Twitter posting
+- [`taxsort-mcp`](https://github.com/lonniev/taxsort-mcp) — tax sorting and classification
+- [`optionality-mcp`](https://github.com/lonniev/optionality-mcp) — options analytics
+- [`tollbooth-oauth2-collector`](https://github.com/lonniev/tollbooth-oauth2-collector) — OAuth2 callback collector
+- [`tollbooth-shortlinks`](https://github.com/lonniev/tollbooth-shortlinks) — URL shortener
+
 ## License
 
 Apache-2.0
