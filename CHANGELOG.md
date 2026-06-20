@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
-- chore: track tollbooth-dpyc through 0.45.4 — SDK advances across 0.45.1 (deferred-adoption tools), 0.45.2, 0.45.3, and 0.45.4 (dynamic tenant ownership + `repair_operator_schema`). Pin bumped to `tollbooth-dpyc[nostr]==0.45.4`. No NE-local wire-API changes.
+- **chore: track tollbooth-dpyc through 0.49.0 — REQUIRED for the operator bootstrap NIP-33 switchover.** 0.49.0 publishes operator bootstrap config as a NIP-33 kind-30078 replaceable event (no longer ages off relays) instead of a kind-4 DM. Cold switchover, no fallback: an operator on ≥0.49.0 reads *only* kind-30078, so every Authority MUST be ≥0.49.0 to publish a readable config; re-run `get_operator_config`/`register_operator` per operator after deploy. Pin `tollbooth-dpyc[nostr]==0.49.0`. (Also carried since 0.45.4: deferred-adoption tools, dynamic tenant ownership + `repair_operator_schema`, the 0.47.0 dunning.) No NE-local wire-API changes.
 - docs: add a DPYC ecosystem peer-repo section to the README (includes the cypher-mcp newcomer).
 
 ## [0.4.1] — 2026-06-11
