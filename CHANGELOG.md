@@ -4,7 +4,13 @@ All notable changes to this project will be documented in this file.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
-- **chore: track tollbooth-dpyc through 0.49.0 — REQUIRED for the operator bootstrap NIP-33 switchover.** 0.49.0 publishes operator bootstrap config as a NIP-33 kind-30078 replaceable event (no longer ages off relays) instead of a kind-4 DM. Cold switchover, no fallback: an operator on ≥0.49.0 reads *only* kind-30078, so every Authority MUST be ≥0.49.0 to publish a readable config; re-run `get_operator_config`/`register_operator` per operator after deploy. Pin `tollbooth-dpyc[nostr]==0.49.0`. (Also carried since 0.45.4: deferred-adoption tools, dynamic tenant ownership + `repair_operator_schema`, the 0.47.0 dunning.) No NE-local wire-API changes.
+
+## [0.4.2] — 2026-06-22
+
+### Changed — consume SDK 0.52.0 (vault_source/purchase_mode decoupling)
+
+- **chore: track tollbooth-dpyc through 0.52.0.** Picks up the vault_source/purchase_mode decoupling: NewEngland Authority now explicitly uses `vault_source="env"` (self-provision Neon from env) and `purchase_mode="auto"` (derive direct/certified from registry chain; resolves to "certified" under NorthAmerica). No wire-API changes. The server.py comments clarify NewEngland's sub-Authority position.
+- Previously tracked: **0.49.0 — REQUIRED for the operator bootstrap NIP-33 switchover.** Cold switchover with no fallback; after deploy, re-run `get_operator_config`/`register_operator` per operator. (Also carried: deferred-adoption tools, dynamic tenant ownership + `repair_operator_schema`, the 0.47.0 dunning.)
 - docs: add a DPYC ecosystem peer-repo section to the README (includes the cypher-mcp newcomer).
 
 ## [0.4.1] — 2026-06-11
