@@ -19,7 +19,7 @@ A sub-regional Authority certified by NorthAmerica. The first 3-deep Authority c
 
 ## Architecture
 
-This repository is a thin consumer of the [`tollbooth-dpyc`](https://github.com/lonniev/tollbooth-dpyc) wheel's `tollbooth.authority` extension (wheel ≥ 0.22.1). The entire deployable surface lives in `src/tollbooth_authority/server.py` (~80 lines): a FastMCP instance, an OperatorRuntime, and two `register_*_tools(mcp, runtime)` calls. Onboarding state machine, Schnorr signer, replay tracker, Neon tenant provisioning, and the 10 Authority @tool definitions are wheel-resident and shared with every other Authority MCP in the ecosystem.
+This repository is a thin consumer of the [`tollbooth-dpyc`](https://github.com/lonniev/tollbooth-dpyc) wheel's `tollbooth.authority` extension (wheel ≥ 0.22.1). The entire deployable surface lives in `src/tollbooth_authority/server.py` (~90 lines): a FastMCP instance, an OperatorRuntime, and two `register_*_tools(mcp, runtime)` calls. Onboarding state machine, Schnorr signer, replay tracker, Neon tenant provisioning, and the Authority @tool definitions are wheel-resident and shared with every other Authority MCP in the ecosystem.
 
 NE was scaffolded from `tollbooth-authority` at the start (May 16, 2026) but is no longer a fork — wheel v0.22.0 collapsed every shared module into `tollbooth.authority.*`. The two repos now coexist as independent thin consumers of the same mixin, distinct only in identity, region, and Neon tenant.
 
@@ -31,7 +31,7 @@ NE's onboarding (`confirm_authority_claim` → `check_authority_approval`) escal
 
 ## Deploy
 
-Two secrets required by FastMCP Cloud (Horizon):
+Two secrets required by Horizon:
 
 | Env var | Value |
 |---|---|
