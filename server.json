@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.lonniev/tollbooth-authority-newengland",
   "title": "Tollbooth Authority New England",
-  "description": "Tollbooth Authority New England — sub-regional certifier under North America",
+  "description": "Tollbooth Authority New England — Tollbooth DPYC™ sub-regional certifier under North America",
   "websiteUrl": "https://cafe.tollbooth-dpyc.com/products/tollbooth-authority-new-england",
   "version": "0.6.4",
   "repository": {
